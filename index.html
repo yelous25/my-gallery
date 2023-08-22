@@ -5,16 +5,55 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/assets/favicon.svg"
+      href="/assets/devchallenges.png"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Vite App</title>
+    <title>My Gallery</title>
   </head>
   <body>
-    <div id="app">Quick Vite Project</div>
+    <div class="main-container container">
+      <header class="header container">
+        <div class="profil">
+          <figure class="profil-photo">
+            <img
+              src="/assets/pictures/profilePhoto.png"
+              alt="user profile photo"
+            />
+          </figure>
+          <h1 class="name">Rodney Cotton</h1>
+          <h3 class="location">Helsinki, Finland</h3>
+        </div>
+        <div class="infos">
+          <div>
+            <span class="number">100</span>
+            <span class="label">Posts</span>
+          </div>
+          <div>
+            <span class="number">2,242</span>
+            <span class="label">Follower</span>
+          </div>
+          <div>
+            <span class="number">1,432</span>
+            <span class="label">Following</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="gallery">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+        </section>
+      </main>
+      <footer class="footer">created by <strong class="username">Yelous</strong> - devChallenges.io</footer>
+    </div>
     <script
       type="module"
       src="/main.js"

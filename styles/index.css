@@ -1,2 +1,231 @@
 @import './_reset.css';
 @import './_base.css';
+
+@font-face {
+  font-family: Montserrat;
+  src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+:root {
+  --gray-1: #333;
+  --gray-2: #4f4f4f;
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+  --orange: #f2994a;
+
+  /* color: var(--gray-1); */
+  /* font-style: normal; */
+  font-family: Montserrat;
+  font-size: 1rem;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 17px;
+}
+
+.header {
+  margin: 3.75rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .profil {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure.profil-photo {
+  width: 9.75rem;
+  height: 9.75rem;
+}
+
+figure.profil-photo img {
+  border-radius: 1rem;
+}
+
+.header .profil .name {
+  margin: 1rem 0 0.5rem 0;
+  color: #4e5150;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.8125rem;
+  word-wrap: break-word;
+}
+
+.header .profil .location {
+  color: #a9a9a9;
+  font-size: 14px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.header .infos {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.header .infos div {
+  width: 100px;
+  height: 67px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #e5e5e5;
+}
+
+.header .infos div .number {
+  margin-bottom: 0.25rem;
+  color: #4e5150;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+
+.header .infos div .label {
+  color: var(--gray-4);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.gallery {
+  margin-bottom: 8.375rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: repeat(3, 18.6875rem);
+  grid-template-columns: repeat(3, 18.6875rem);
+}
+
+.photo {
+  border-radius: 0.75rem;
+}
+
+.photo img {
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.photo-1 {
+}
+
+.photo-2 {
+  grid-column: span 2;
+}
+
+.photo-3 {
+  grid-column: span 2;
+}
+
+.photo-4 {
+  grid-row: span 2;
+}
+
+.photo-4 img {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.photo-1 {
+}
+
+.footer {
+  margin: auto auto 1.5rem auto;
+  align-self: center;
+  justify-self: flex-end;
+  color: #b9bdcf;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer .username {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery {
+    margin-bottom: 6rem;
+    gap: 1rem;
+    grid-template-rows: repeat(3, 12.5rem);
+    grid-template-columns: repeat(3, 12.5rem);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    margin: 1.875rem 0 2.5rem 0;
+  }
+
+  .header .profil {
+    margin-bottom: .75rem;
+  }
+
+  figure.profil-photo {
+    width: 6.375rem;
+    height: 6.375rem;
+  }
+
+  figure.profil-photo img {
+    border-radius: 1rem;
+  }
+
+  .header .profil .name {
+    margin: .75rem 0 0.25rem 0;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+  }
+
+  .header .profil .location {
+    font-size: .625rem;
+  }
+
+  .header .infos {
+    column-gap: .75rem;
+  }
+
+  .header .infos div {
+    width: 78px;
+    height: 52px;
+  }
+
+  .header .infos div .number {
+    margin-bottom: 0rem;
+    font-size: .75rem;
+    line-height: .9375rem;
+  }
+
+  .header .infos div .label {
+    font-size: .75rem;
+    line-height: .9375rem;
+  }
+
+  .gallery {
+    margin-bottom: 6rem;
+    gap: 0.75rem;
+    grid-template-rows: repeat(3, 6.875rem);
+    grid-template-columns: repeat(3, 6.875rem);
+  }
+
+  .photo-4 img {
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
