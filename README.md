@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://my-gallery-d5974.web.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/3GDGANwKzTAKRSxHJIva">
       Solution
     </a>
     <span> | </span>
@@ -37,13 +37,6 @@
 ## Overview
 
 ![screenshot](https://github.com/yelous25/my-gallery/blob/main/assets/screenshot.png?raw=true)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
